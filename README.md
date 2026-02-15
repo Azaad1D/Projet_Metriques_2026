@@ -33,28 +33,18 @@ make install
 ```
 make run
 ```
-**Installation du logiciel Packer (création d'images Docker)**  
-```
-PACKER_VERSION=1.11.2
-curl -fsSL -o /tmp/packer.zip \
-  "https://releases.hashicorp.com/packer/${PACKER_VERSION}/packer_${PACKER_VERSION}_linux_amd64.zip"
-sudo unzip -o /tmp/packer.zip -d /usr/local/bin
-rm -f /tmp/packer.zip
-```
-**Installation du logiciel Ansible**  
-```
-python3 -m pip install --user ansible kubernetes PyYAML jinja2
-export PATH="$HOME/.local/bin:$PATH"
-ansible-galaxy collection install kubernetes.core
-```
+**Réccupération de l'URL de votre application Flask**. Votre application Flask est déployée dans votre Codespace. Pour obtenir votre URL cliquez sur l'onglet **[PORTS]** dans votre Codespace (à coté de Terminal) et rendez public votre port 500 (Visibilité du port). Ouvrez l'URL dans votre navigateur et c'est terminé, votre application est en ligne !  
   
 ---------------------------------------------------
-Séquence 3 : Déploiement de l'infrastructure
+Séquence 3 : Modifier son code
 ---------------------------------------------------
-Objectif : Déployer l'infrastructure sur le cluster Kubernetes
+Objectif : Apporter des modifications à son code et le mettre en ligne
 Difficulté : Facile (~15 minutes)
 ---------------------------------------------------  
+Dans cette séquence, vous allez modifier le code du fichier hello.html dans Github, mettre à jour votre Codespace et observer le résultat en ligne sur votre site Web.  
 
+
+Vous allez dans cette séquence installer un serveur Flask dans votre Codespace. Depuis le terminal de votre Codespace copier/coller les codes ci-dessous étape par étape :
 
 
 
